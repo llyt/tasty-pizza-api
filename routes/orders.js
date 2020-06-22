@@ -1,8 +1,10 @@
 const router = require('express').Router()
+const Order = require('../models/Order')
 
 router.get('/', async (req, res) => {
   try {
-    return res.status(200).send('That are your orders, sir!')
+    const orders = await Order.find()
+    return res.status(200).send(orders)
   } catch (e) {
     // Do something
   }

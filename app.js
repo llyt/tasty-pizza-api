@@ -9,7 +9,7 @@ const port = 5000
 
 // Import Routes
 const goodsRoute = require('./routes/goods')
-const usersRoute = require('./routes/users')
+const ordersRoute = require('./routes/orders')
 
 // Connect to Mongo DB
 const DB_URL = process.env.DB_URL
@@ -26,7 +26,7 @@ app.use(cors())
 // Route Middlewares
 
 app.use('/goods', goodsRoute)
-app.use('/users', usersRoute)
+app.use('/orders', ordersRoute)
 
 // Starting App
 app.listen(port, () => console.log(`Server up and running on port: ${port}`))
