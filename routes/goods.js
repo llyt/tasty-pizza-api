@@ -1,10 +1,12 @@
 const router = require('express').Router()
+const Goods = require('../models/Goods')
 
 router.get('/', async (req, res) => {
   try {
-    return res.status(200).send('Hello!')
+    const allGoods = await Goods.find()
+    return res.status(200).send(allGoods)
   } catch (e) {
-    // Do something
+    console.error(e.message)
   }
 })
 
