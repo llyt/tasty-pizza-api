@@ -6,7 +6,7 @@ router.get('/', async (req, res) => {
     const allGoods = await Goods.find()
     return res.status(200).send(allGoods)
   } catch (e) {
-    console.error(e.message)
+    res.status(400).send(e.message)
   }
 })
 

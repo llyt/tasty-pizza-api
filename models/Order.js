@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const orderSchema = new mongoose.Schema({
   phone: String,
   name: String,
-  createAt: Date,
+  createAt: String,
   goods: Array,
   address: String,
   totalAmount: Number

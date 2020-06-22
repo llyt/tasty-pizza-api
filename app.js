@@ -5,14 +5,14 @@ const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 dotenv.config()
 
-const port = 5000
+const port = process.env.PORT || 5000
 
 // Import Routes
 const goodsRoute = require('./routes/goods')
 const ordersRoute = require('./routes/orders')
 
 // Connect to Mongo DB
-const DB_URL = process.env.DB_URL
+const DB_URL = process.env.MONGO_URL
 
 mongoose.connect(DB_URL, {
   useNewUrlParser: true,
