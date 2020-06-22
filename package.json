@@ -1,0 +1,16 @@
+{
+  "name": "tasty-pizza-api",
+  "version": "0.1.0",
+  "description": "API for Tasty Pizza project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "tasty",
+    "pizza"
+  ],
+  "author": "Anton Lytkin <anton@lytkin.me>",
+  "license": "ISC"
+}
