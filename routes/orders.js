@@ -12,12 +12,7 @@ router.get('/', async (req, res) => {
       res.status(400).send(e.message)
     }
   }
-  try {
-    const orders = await Order.find()
-    return res.status(200).send(orders)
-  } catch (e) {
-    res.status(400).send(e.message)
-  }
+  res.status(403).send('')
 })
 
 // Create new order
