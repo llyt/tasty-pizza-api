@@ -4,7 +4,8 @@
   "description": "API for Tasty Pizza project",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [
     "api",
@@ -22,5 +23,8 @@
   "devDependencies": {
     "eslint": "^7.3.0",
     "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
