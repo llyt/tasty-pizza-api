@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
 // Create new order
 router.post('/', async (req, res) => {
   if (!validation(['phone', 'name', 'date', 'goods', 'address'], req)) {
-    return res.status(400).send('Request data is not valid!')
+    return res.status(400).send('Sent data is incorrect!')
   }
 
   const { phone, name, date, goods, address } = req.body
